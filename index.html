@@ -201,13 +201,13 @@ a:hover{color:#E2562B}
     </div>
     <div data-intro="cols" style="position:absolute;inset:0;pointer-events:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));opacity:0.32">
       <div style="position:relative;overflow:hidden">
-        <video-slot id="hero-bg-01" src="videos/preview/backstage-01.mp4" quiet="" style="position:absolute;inset:-4%;width:108%;height:108%;filter:blur(6px) saturate(0.85);background:transparent"></video-slot>
+        <video-slot id="hero-bg-01" src="videos/bg/backstage-01.mp4" quiet="" style="position:absolute;inset:-4%;width:108%;height:108%;background:transparent"></video-slot>
       </div>
       <div style="position:relative;overflow:hidden">
-        <video-slot id="hero-bg-02" src="videos/preview/backstage-02.mp4" quiet="" style="position:absolute;inset:-4%;width:108%;height:108%;filter:blur(6px) saturate(0.85);background:transparent"></video-slot>
+        <video-slot id="hero-bg-02" src="videos/bg/backstage-02.mp4" quiet="" style="position:absolute;inset:-4%;width:108%;height:108%;background:transparent"></video-slot>
       </div>
       <div style="position:relative;overflow:hidden">
-        <video-slot id="hero-bg-03" src="videos/preview/backstage-03.mp4" quiet="" style="position:absolute;inset:-4%;width:108%;height:108%;filter:blur(6px) saturate(0.85);background:transparent"></video-slot>
+        <video-slot id="hero-bg-03" src="videos/bg/backstage-03.mp4" quiet="" style="position:absolute;inset:-4%;width:108%;height:108%;background:transparent"></video-slot>
       </div>
     </div>
     <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent calc(33.333% - 0.5px),rgba(20,18,16,0.1) calc(33.333% - 0.5px),rgba(20,18,16,0.1) calc(33.333% + 0.5px),transparent calc(33.333% + 0.5px),transparent calc(66.666% - 0.5px),rgba(20,18,16,0.1) calc(66.666% - 0.5px),rgba(20,18,16,0.1) calc(66.666% + 0.5px),transparent calc(66.666% + 0.5px)),linear-gradient(180deg,transparent calc(33.333% - 0.5px),rgba(20,18,16,0.1) calc(33.333% - 0.5px),rgba(20,18,16,0.1) calc(33.333% + 0.5px),transparent calc(33.333% + 0.5px),transparent calc(66.666% - 0.5px),rgba(20,18,16,0.1) calc(66.666% - 0.5px),rgba(20,18,16,0.1) calc(66.666% + 0.5px),transparent calc(66.666% + 0.5px))"></div>
@@ -237,7 +237,7 @@ a:hover{color:#E2562B}
         <div ref="{{ reelWordRef }}" style="position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);display:flex;justify-content:center;pointer-events:none;font-family:'Instrument Serif',serif;font-size:clamp(110px,22vw,380px);line-height:0.8;letter-spacing:-0.04em;color:#141210;text-shadow:0.03em 0.025em 0 #E2562B;white-space:nowrap">Showreel</div>
         <div ref="{{ reelPhoneRef }}" data-play="videos/full/showreel.mp4" data-cursor="assistir" style="position:relative;height:min(74vh,calc(86vw * 16 / 9));aspect-ratio:9/16;border-radius:34px;background:#141210;padding:9px;box-shadow:0 50px 80px -40px rgba(20,18,16,0.55);transform-origin:50% 80%;will-change:transform;cursor:pointer">
           <div style="width:100%;height:100%;border-radius:26px;overflow:hidden;background:#DDD6C9">
-            <video-slot id="showreel" src="videos/full/showreel.mp4" placeholder="showreel 9:16" style="width:100%;height:100%"></video-slot>
+            <video-slot id="showreel" src="videos/preview/showreel-phone.mp4" placeholder="showreel 9:16" style="width:100%;height:100%"></video-slot>
           </div>
         </div>
         <div style="position:absolute;left:clamp(20px,4vw,56px);right:clamp(20px,4vw,56px);bottom:28px;display:flex;justify-content:space-between;gap:24px;font-family:'DM Mono',monospace;font-size:13px;color:#6E675E;pointer-events:none">
@@ -249,9 +249,9 @@ a:hover{color:#E2562B}
     <sc-if value="{{ reelTri }}" hint-placeholder-val="{{ false }}">
       <div style="position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;perspective:1400px">
         <div ref="{{ reelTriRef }}" style="position:relative;height:min(66vh,calc(60vw * 16 / 9));aspect-ratio:9/16;transform-style:preserve-3d">
-          <div style="position:absolute;inset:6%;border-radius:18px;overflow:hidden;background:#DDD6C9;opacity:0.85"><video-slot id="showreel-l" src="videos/full/showreel.mp4" placeholder="showreel 9:16" style="width:100%;height:100%"></video-slot></div>
-          <div style="position:absolute;inset:6%;border-radius:18px;overflow:hidden;background:#DDD6C9;opacity:0.85"><video-slot id="showreel-r" src="videos/full/showreel.mp4" placeholder="showreel 9:16" style="width:100%;height:100%"></video-slot></div>
-          <div data-play="videos/full/showreel.mp4" data-cursor="assistir" style="position:absolute;inset:0;border-radius:22px;overflow:hidden;background:#DDD6C9;box-shadow:0 40px 70px -40px rgba(20,18,16,0.55);cursor:pointer"><video-slot id="showreel" src="videos/full/showreel.mp4" placeholder="showreel 9:16" style="width:100%;height:100%"></video-slot></div>
+          <div style="position:absolute;inset:6%;border-radius:18px;overflow:hidden;background:#DDD6C9;opacity:0.85"><video-slot id="showreel-l" src="videos/preview/showreel-phone.mp4" placeholder="showreel 9:16" style="width:100%;height:100%"></video-slot></div>
+          <div style="position:absolute;inset:6%;border-radius:18px;overflow:hidden;background:#DDD6C9;opacity:0.85"><video-slot id="showreel-r" src="videos/preview/showreel-phone.mp4" placeholder="showreel 9:16" style="width:100%;height:100%"></video-slot></div>
+          <div data-play="videos/full/showreel.mp4" data-cursor="assistir" style="position:absolute;inset:0;border-radius:22px;overflow:hidden;background:#DDD6C9;box-shadow:0 40px 70px -40px rgba(20,18,16,0.55);cursor:pointer"><video-slot id="showreel" src="videos/preview/showreel-phone.mp4" placeholder="showreel 9:16" style="width:100%;height:100%"></video-slot></div>
         </div>
         <div style="display:flex;align-items:baseline;gap:20px;flex-wrap:wrap;justify-content:center">
           <span style="font-family:'Instrument Serif',serif;font-size:clamp(40px,5vw,80px);line-height:1;letter-spacing:-0.02em">Show<em style="color:#E2562B">reel</em></span>
@@ -267,7 +267,7 @@ a:hover{color:#E2562B}
       </div>
       <div style="position:relative;height:min(80vh,calc((100vw - 120px) * 0.5 * 16 / 9));aspect-ratio:9/16;perspective:1200px">
         <div ref="{{ reelMaskRef }}" data-cursor="assistir" data-play="videos/full/showreel.mp4" style="position:absolute;inset:0;clip-path:inset(30% 30% round 999px);background:#DDD6C9;border-radius:20px;overflow:hidden">
-          <video-slot id="showreel" src="videos/full/showreel.mp4" placeholder="showreel 9:16" style="width:100%;height:100%"></video-slot>
+          <video-slot id="showreel" src="videos/preview/showreel-phone.mp4" placeholder="showreel 9:16" style="width:100%;height:100%"></video-slot>
         </div>
       </div>
       <div style="display:flex;flex-direction:column;gap:14px;justify-self:start;font-family:'DM Mono',monospace;font-size:13px;color:#A39C90;max-width:220px">
@@ -454,7 +454,7 @@ class Component extends DCLogic {
     this.onClick = (e) => {
       const pl = this.playerRef.current, v = this.playerVideoRef.current, msg = this.playerMsgRef.current;
       if (pl.style.display === 'flex') {
-        if (e.target === pl || (e.target.closest && e.target.closest('[data-close]'))) { v.pause(); v.removeAttribute('src'); v.load(); pl.style.display = 'none'; }
+        if (e.target === pl || (e.target.closest && e.target.closest('[data-close]'))) { v.pause(); v.removeAttribute('src'); v.load(); pl.style.display = 'none'; document.querySelectorAll('video-slot').forEach((s) => s.tryPlay()); }
         return;
       }
       const chip = e.target.closest && e.target.closest('[data-chip]');
@@ -473,12 +473,20 @@ class Component extends DCLogic {
       e.preventDefault();
       msg.style.display = 'none'; v.style.display = 'block';
       v.onerror = () => { msg.style.display = 'flex'; v.style.display = 'none'; };
-      v.src = t.getAttribute('data-play'); v.muted = false; v.currentTime = 0;
+      clearTimeout(this.warmT); document.querySelectorAll('video-slot').forEach((s) => s.v.pause());
+      this.warm(t.getAttribute('data-play')); v.muted = false; v.currentTime = 0;
       pl.style.display = 'flex';
       v.play().catch(() => {});
     };
     this.onKey = (e) => { if (e.key === 'Escape' && this.playerRef.current.style.display === 'flex') this.onClick({ target: this.playerRef.current }); };
     document.addEventListener('click', this.onClick);
+    this.onHover = (e) => {
+      const t = e.pointerType === 'mouse' && e.target.closest && e.target.closest('[data-play]');
+      if (!t || this.playerRef.current.style.display === 'flex') return;
+      clearTimeout(this.warmT);
+      this.warmT = setTimeout(() => this.warm(t.getAttribute('data-play')), 200);
+    };
+    document.addEventListener('pointerover', this.onHover);
     document.addEventListener('keydown', this.onKey);
     this.onPar = (e) => {
       const cut = this.heroCutRef.current;
@@ -491,6 +499,15 @@ class Component extends DCLogic {
     this.runIntro();
     this.setupCursor();
     this.setupReveal();
+  }
+
+  // Loads a full video into the hidden player so it starts sooner on click.
+  warm(src) {
+    const v = this.playerVideoRef.current;
+    if (v.getAttribute('src') === src && !v.error) return;
+    v.preload = 'auto';
+    v.poster = src.replace('/full/', '/poster/').replace('.mp4', '.jpg');
+    v.src = src;
   }
 
   runIntro() {
@@ -520,6 +537,7 @@ class Component extends DCLogic {
     document.removeEventListener('scroll', this.onScroll, true);
     window.removeEventListener('resize', this.onResize);
     document.removeEventListener('click', this.onClick);
+    document.removeEventListener('pointerover', this.onHover);
     window.removeEventListener('mousemove', this.onPar);
     document.removeEventListener('keydown', this.onKey);
     if (this.onMove) window.removeEventListener('mousemove', this.onMove);
@@ -689,7 +707,7 @@ a:hover{color:#E2562B}
     <section id="capa" data-screen="" data-screen-label="01 Capa" style="height:100svh;scroll-snap-align:start;scroll-snap-stop:always;position:relative;overflow:hidden">
       <div data-cam="" style="position:absolute;inset:0;overflow:hidden;background:#EFEAE0;transform-origin:50% 50%;will-change:transform">
         <div ref="{{ bgRef }}" style="position:absolute;inset:0;opacity:0.3;pointer-events:none">
-          <video-slot id="hero-bg-m" src="videos/preview/backstage-02.mp4" quiet="" style="position:absolute;inset:-4%;width:108%;height:108%;filter:blur(4px);background:transparent"></video-slot>
+          <video-slot id="hero-bg-m" src="videos/bg/backstage-02.mp4" quiet="" style="position:absolute;inset:-4%;width:108%;height:108%;background:transparent"></video-slot>
         </div>
         <h1 ref="{{ nameRef }}" style="position:relative;z-index:2;margin:0;padding:calc(64px + env(safe-area-inset-top)) 18px 0;font-weight:400;font-family:'Instrument Serif',serif;font-size:min(32vw,156px);line-height:0.84;letter-spacing:-0.035em;color:#141210;text-shadow:0.03em 0.025em 0 #E2562B;display:flex;flex-direction:column">
           <span>Henri</span>

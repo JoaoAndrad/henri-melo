@@ -4,7 +4,7 @@ Site: https://joaoandrad.github.io/henri-melo/
 
 - `index.html` — versões desktop e mobile na mesma página (mobile até 760px de largura).
 - `assets/` — fontes, scripts e fotos.
-- `videos/full/` — vídeos completos; `videos/preview/` — versões leves e mudas dos cards e do fundo; `videos/poster/` — imagens de capa.
+- `videos/full/` — vídeos completos (540p); `videos/preview/` — trechos leves e mudos dos cards; `videos/bg/` — fundo do hero, já desfocado; `videos/poster/` — imagens de capa.
 
 ## Vídeos
 | Arquivo | Uso |
